@@ -1,2 +1,2 @@
-# k8s-controllers
+# k8s-Operators
 Kubernetes Operators
