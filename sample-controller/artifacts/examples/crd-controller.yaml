@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sample-controller
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: demo-sample-controller
+    spec:
+      serviceAccountName: system
+      containers:
+      - name: sample-controller
+        image: 192.168.1.73:5000/sample-controller
+        command:
+        - ./sample-controller
+
+
